@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 125%;
+    background-color: #f4ece5;
+}
+
+.container1 {
+    width: 100%;
+    height: 100%;
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rectangle {
+    margin-top: 50px;
+    width: 1320px;
+    height: 690px;
+    background-color: #fefbf8;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin-left: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.menu > ul > li {
+    margin: 5px;
+    padding: 5px;
+    width: 80px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    text-decoration: underline 1px;
+} 
+
+.checkOut {
+    text-decoration: none;
+}
+
+.bag {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 12%;
+    left: 90%;
+    cursor: pointer;
+}
+
+hr {
+    margin: 20px;
+    border: 0.3px solid #ccccc6;
+    z-index: 1;
+}
+
+.topMid {
+    width: 30%;
+    height: 40%;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+}
+
+.topMid h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    cursor: default;
+    user-select: none;
+}
+
+
+.topMid p {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    cursor: default;
+    user-select: none;
+    text-align: center;
+}
+
+.shopButton {
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #e6d7c7;
+    position: relative;
+    left: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.shopButton:hover {
+    background-color: #e1c4a4;
+}
+
+.shopButton p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.shopButton a {
+    text-decoration: none;
+    color: black;
+}
+
+.shopMenu {
+    display: none;
+}
+
+.menu ul li:hover .shopMenu {
+    display: block;
+    position: absolute;
+    background-color: #e1c4a4;
+    margin-top: 5px;
+    z-index: 10;
+}
+
+.menu ul li:hover .shopMenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .shopMenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid wheat;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu ul li:hover .shopMenu ul li:last-child {
+    border-bottom: none;
+}
+
+.perfumes {
+    margin-top: 190px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+}
+
+.perfume1, .perfume2, .perfume3 {
+    margin: 25px;
+    border: 1px solid wheat;
+    width: 300px;
+    height: 300px;
+    /*overflow: hidden;*/
+    text-align: center;
+}
+
+.perfume1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfume2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfume3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfume1 img:hover, .perfume2 img:hover, .perfume3 img:hover {
+  filter: brightness(1.2);
+  transition: 0.1s ease;
+}
+
+.perfume1 p, .perfume2 p, .perfume3 p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    cursor: text;
+    color: black;
+}
